@@ -1,0 +1,18 @@
+FORCA DEV - VERSAO CADERNO
+
+1. Extraia este ZIP em uma pasta nova, sem apagar o projeto anterior.
+2. No VS Code: File > Open Folder > forca-dev.
+3. Terminal 1: cd backend
+4. Rode: npm install
+5. Rode: Copy-Item .env.example .env
+6. Rode: npx prisma migrate dev
+7. Rode: npm run seed
+8. Rode: npm run dev
+9. Abra OUTRO terminal, na pasta forca-dev: cd frontend
+10. Rode: npm install
+11. Rode: npm run dev
+12. Acesse http://localhost:5173 no navegador.
+
+Se algum comando falhar, mande uma foto da mensagem do terminal.
+Nao envie somente o ZIP: o professor pediu Git e tags/checkpoints.
+Leia o README.md e registre seu progresso no diario de bordo.

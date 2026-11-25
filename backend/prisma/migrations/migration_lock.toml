@@ -1,0 +1,2 @@
+# Provider do banco usado nas migrations deste projeto.
+provider = "sqlite"

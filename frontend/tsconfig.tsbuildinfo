@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/types.ts","./src/api/cliente.ts","./src/components/mascara.tsx","./src/components/ranking.tsx","./src/components/teclado.tsx","./src/components/vidas.tsx","./vite.config.ts"],"version":"5.9.3"}

@@ -1,0 +1,19 @@
+PERSONALIZAR O FORCA DEV (SEM COMPLICAR)
+
+Para mudar o texto do topo do jogo:
+- Abra frontend/src/App.tsx.
+- Procure o titulo FORCA DEV e o subtitulo Desafio de palavras da programacao.
+
+Para mudar as cores:
+- Abra frontend/src/style.css.
+- Procure #252a2d (fundo grafite), #f4f0e7 (papel claro),
+  #e4b75d (amarelo), #437a70 (verde dos botoes).
+
+Para mudar as palavras:
+- Abra backend/src/database/seed.ts.
+- Cada item e formado por uma palavra e sua categoria.
+- Use apenas letras A a Z em maiusculas, sem acentos nem espacos.
+- Mantenha pelo menos 20 palavras nas tres categorias.
+- Para atualizar o banco, no terminal backend rode: npm run seed
+
+IMPORTANTE: anote no diario o que realmente editou e executou.

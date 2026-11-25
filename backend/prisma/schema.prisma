@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Palavra {
+  id        Int       @id @default(autoincrement())
+  texto     String    @unique
+  categoria String
+  partidas  Partida[]
+
+  @@map("palavras")
+}
+
+model Partida {
+  id             Int       @id @default(autoincrement())
+  jogador        String
+  palavraId      Int       @map("palavra_id")
+  palavra        Palavra   @relation(fields: [palavraId], references: [id])
+  letrasTentadas String    @default("") @map("letras_tentadas")
+  erros          Int       @default(0)
+  status         String    @default("em_andamento")
+  pontos         Int       @default(0)
+  criadaEm       DateTime  @default(now()) @map("criada_em")
+  finalizadaEm   DateTime? @map("finalizada_em")
+
+  @@map("partidas")
+}

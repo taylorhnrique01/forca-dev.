@@ -1,0 +1,75 @@
+/* Estilo caderno: grafite por fora e papel claro na área de jogo. */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2d3034;
+  background: #252a2d;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+.pagina { max-width: 850px; margin: 0 auto; padding: 25px 20px 35px; }
+.cabecalho { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; color: #f6f3eb; }
+.assinatura { display: flex; align-items: center; gap: 13px; }
+.simbolo { display: grid; place-items: center; width: 43px; height: 43px; font-weight: bold; font-size: 25px; background: #e4b75d; color: #272b2d; border-radius: 4px; }
+h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
+.cabecalho p { margin: 5px 0 0; font-size: 13px; color: #c5c9c9; }
+.etiqueta { font-size: 12px; border: 1px solid #717b79; border-radius: 3px; padding: 8px 10px; }
+h2 { font-size: 22px; margin: 8px 0 12px; }
+.folha { border-radius: 5px; background: #f4f0e7; padding: 30px; border-top: 5px solid #e4b75d; }
+.pequeno { color: #80714e; letter-spacing: 1.2px; font-size: 12px; font-weight: bold; margin: 0 0 10px; }
+.texto { color: #565b5e; line-height: 1.55; max-width: 550px; margin: 0 0 26px; }
+label { display: block; font-weight: 600; margin: 18px 0 8px; }
+.campo-acao { display: flex; gap: 10px; }
+input { border: 1px solid #aeb0ad; border-radius: 4px; padding: 12px; background: #fff; color: #242b2d; width: 100%; min-width: 0; }
+input:focus { outline: 2px solid #b7a16a; outline-offset: 1px; }
+.botao { background: #437a70; color: white; border: none; border-radius: 4px; padding: 12px 19px; min-width: 140px; font-weight: 600; }
+.botao:hover:not(:disabled) { background: #346158; }
+.botao:disabled { background: #959e9b; }
+.dica { font-size: 13px; color: #6e7375; margin: 13px 0 0; line-height: 1.4; }
+.ranking { background: #333a3e; color: #f0f3f1; border-radius: 5px; margin-top: 15px; padding: 23px 26px; }
+.titulo-ranking { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.titulo-ranking h2 { font-size: 18px; margin: 0 0 10px; }
+.titulo-ranking span { color: #eccb87; font-weight: 700; font-size: 12px; }
+.ranking-vazio { margin: 6px 0; color: #bfc6c7; font-size: 14px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 10px 7px; text-align: left; border-bottom: 1px solid #50595c; }
+th { color: #d7dcd9; font-size: 12px; }
+td:last-child, th:last-child { text-align: right; font-weight: bold; }
+.placar { display: grid; grid-template-columns: 1fr 1fr 1fr; background: #333a3e; color: white; margin-bottom: 15px; border-radius: 5px; }
+.placar > div { padding: 14px 18px; border-right: 1px solid #515a5d; min-width: 0; }
+.placar > div:last-child { border-right: none; }
+.placar span { font-size: 11px; color: #c1c9c8; letter-spacing: 1px; display: block; margin-bottom: 6px; }
+.placar strong { display: block; overflow-wrap: anywhere; }
+.pontos-vida { display: flex; gap: 5px; margin-top: 8px; }
+.pontos-vida i { display: block; width: 12px; height: 7px; background: #e4b75d; border-radius: 2px; }
+.pontos-vida i.perdido { background: #656d70; }
+.area-palavra { text-align: center; }
+.palavra { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 24px 0; }
+.casinha { background: #fff; border: 1px solid #c9c6bd; border-bottom: 3px solid #437a70; width: 40px; height: 48px; display: grid; place-items: center; font-size: 25px; font-weight: bold; }
+.casinha.vazia { border-bottom-color: #b69d61; }
+.painel-teclado { margin-top: 15px; padding: 23px 20px; background: #333a3e; border-radius: 5px; color: white; }
+.painel-teclado h3 { margin: 0 0 16px; font-size: 16px; }
+.letras { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; }
+.letra { color: #1f2929; background: #f0f0ea; border: 1px solid #c3c9c4; border-radius: 3px; font-weight: bold; font-size: 15px; width: 45px; height: 43px; }
+.letra:hover:not(:disabled) { background: #e4b75d; }
+.letra.certa { background: #6ea894; border-color: #6ea894; color: white; opacity: 1; }
+.letra.errada { background: #b96e69; border-color: #b96e69; color: white; opacity: 1; }
+.carregando { text-align: center; color: #d4d9d6; margin: 14px 0 0; font-size: 13px; }
+.faixa-final { background: #333a3e; color: white; margin-top: 15px; padding: 20px 23px; border-radius: 5px; display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
+.faixa-final p { margin: 0; font-size: 17px; }
+.faixa-final strong { font-size: 14px; }
+.voltar { background: none; border: none; color: #e5ce9b; display: block; margin: 17px 0 4px; padding: 5px 0; }
+.aviso { background: #653e3c; color: #fff; padding: 12px; border-radius: 4px; }
+footer { text-align: center; color: #aeb7b5; margin-top: 24px; font-size: 12px; }
+@media(max-width: 650px) {
+  .pagina { padding: 18px 12px; }
+  .folha { padding: 21px 16px; }
+  .campo-acao { flex-direction: column; }
+  .placar > div { padding: 12px 8px; }
+  .casinha { width: 30px; height: 40px; font-size: 19px; }
+  .letra { width: 35px; height: 39px; }
+  .ranking { padding: 18px 12px; overflow-x: auto; }
+  .faixa-final { flex-direction: column; align-items: flex-start; }
+}
